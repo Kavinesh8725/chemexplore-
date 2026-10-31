@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemExplore - Compound Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="logo">🧪 ChemExplore</div>
+        <p class="subtitle">Your Chemical Compound Finder</p>
+        <h1>Explore Chemistry</h1>
+        <p>Find chemical formulas, molar masses, CAS numbers and uses.</p>
+
+        <div class="search-box">
+            <input
+                type="search"
+                id="search"
+                placeholder="Enter name, formula or CAS number"
+            >
+            <button id="searchButton" type="button">Search</button>
+        </div>
+
+        <p class="examples">Try: Water, NaCl, glucose, CO2</p>
+    </header>
+
+    <main class="container">
+        <h2>Compound Details</h2>
+
+        <div id="result" class="result-card" aria-live="polite">
+            <div class="molecule-icon">⚛️</div>
+            <h3>Welcome to ChemExplore!</h3>
+            <p>Search for a compound to see its details.</p>
+        </div>
+
+        <h2 class="library-title">Popular Compounds</h2>
+
+        <div class="compound-grid">
+            <button class="compound-card" data-search="water">
+                <span class="formula">H₂O</span>
+                <span class="compound-name">Water</span>
+            </button>
+
+            <button class="compound-card" data-search="nacl">
+                <span class="formula">NaCl</span>
+                <span class="compound-name">Sodium Chloride</span>
+            </button>
+
+            <button class="compound-card" data-search="glucose">
+                <span class="formula">C₆H₁₂O₆</span>
+                <span class="compound-name">Glucose</span>
+            </button>
+
+            <button class="compound-card" data-search="co2">
+                <span class="formula">CO₂</span>
+                <span class="compound-name">Carbon Dioxide</span>
+            </button>
+
+            <button class="compound-card" data-search="baking soda">
+                <span class="formula">NaHCO₃</span>
+                <span class="compound-name">Baking Soda</span>
+            </button>
+
+            <button class="compound-card" data-search="methane">
+                <span class="formula">CH₄</span>
+                <span class="compound-name">Methane</span>
+            </button>
+        </div>
+
+        <p class="notice">
+            Educational reference only. Verify chemical and safety
+            information with reliable scientific sources.
+        </p>
+    </main>
+
+    <footer>
+        <p>🧪 ChemExplore | Learn Chemistry Easily</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

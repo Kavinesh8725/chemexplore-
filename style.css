@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f7f9;
+    color: #19333c;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, #103c4b, #087f8c);
+    color: white;
+    text-align: center;
+    padding: 35px 18px 40px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #c9eeee;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin: 15px 0 8px;
+}
+
+.hero > p {
+    margin-bottom: 12px;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 620px;
+    margin: 22px auto 10px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #6ce5d4;
+}
+
+.search-box button {
+    background: #ffd166;
+    color: #19333c;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #ffbf3f;
+}
+
+.examples {
+    font-size: 13px;
+    color: #d6eeee;
+}
+
+.container {
+    width: 92%;
+    max-width: 950px;
+    margin: 30px auto;
+}
+
+.container h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.result-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #dbe8ec;
+    box-shadow: 0 5px 18px #19333c0d;
+    overflow-wrap: anywhere;
+}
+
+.result-card h3 {
+    color: #087f8c;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.result-card p {
+    margin: 8px 0;
+}
+
+.molecule-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.library-title {
+    margin-top: 35px;
+}
+
+.compound-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.compound-card {
+    background: white;
+    border: 1px solid #dbe8ec;
+    border-radius: 14px;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #19333c;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.compound-card:hover {
+    transform: translateY(-3px);
+    border-color: #087f8c;
+}
+
+.formula {
+    color: #087f8c;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.compound-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notice {
+    color: #61757c;
+    font-size: 12px;
+    margin-top: 28px;
+}
+
+footer {
+    background: #103c4b;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+    margin-top: 40px;
+}
+
+@media (min-width: 650px) {
+    .compound-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 50px 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .result-card {
+        padding: 18px;
+    }
+}
+
